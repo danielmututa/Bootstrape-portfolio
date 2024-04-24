@@ -1,0 +1,1725 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url("Montserrat-Bold.ttf");
+}
+
+// variables
+
+ // fonts
+$font-paragraph:16px;
+$font-banner-paragraph:18px;
+
+
+// heading fonts
+$h1-font:50px;
+
+
+// background colors
+$b-grd-color-light-gray:#2d3e50;
+$b-grd-color-aq:#1bbc9b;
+$b-grd-color-darkgray:#1B252F;
+
+// colors
+$white:#ffffff;
+$black:#000000;
+
+// lines
+$base-width:70px;
+
+
+// border-solids-lines
+$linetwo:2px;
+
+// border-icons
+$lineone:1px;
+
+
+
+   
+
+
+
+
+
+
+
+
+.munehamb{
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      i{
+        margin: 10px;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      logo{
+        p{
+            font-size: 20px;
+        }
+      }
+      span{
+        font-family: Montserrat;
+        padding-right: 15px;
+    position: absolute;
+        // float: right;
+top: 0;
+right: 0;
+      }
+      a{
+        font-family: Montserrat;
+      }
+}
+
+  
+  @media screen and (min-width: 789px) {
+    .munehamb{
+        display: none;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin navigation{
+    
+    background-color: $b-grd-color-light-gray;
+   
+    .container{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+    }
+    p{
+        font-family: Montserrat;
+        font-size: $font-banner-paragraph;
+        color: $white;
+        font-weight: bolder;
+        margin-top: 10px;
+    }
+ a{
+    font-family: Montserrat;
+    margin-left: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    color: $white;
+ }
+
+ 
+}
+
+.navigation{
+    @include navigation;
+}
+
+
+
+
+@mixin banner{
+    font-family: Montserrat;
+    background-color:$b-grd-color-aq;
+    padding-top: 50px;
+    padding-bottom: 34px;
+
+    img{
+        width: 100%;
+        height: 35vh;
+        margin-bottom: 30px;
+      
+    }
+    .head{
+        text-align: center;
+    }
+p{
+    font-family: Montserrat;
+    font-size: $font-paragraph;
+    color: $white;
+    margin: 12px;
+    
+}
+h1{
+    font-family: Montserrat;
+    font-size: 50px;
+    color: white;
+}
+
+
+
+
+.line{
+    margin-bottom: 8px;
+    width:70px;
+    border: $linetwo solid $white;
+    
+    
+ }
+ span{
+    display: inline-block;
+    margin: 5px;
+ }
+
+.line2{
+    width:70px;
+    border: $linetwo solid $white;
+    margin-bottom: 8px;
+    
+ }
+
+
+
+}
+
+.banner{
+    @include banner;
+}
+
+
+
+
+
+#portfolio{
+   
+    padding-top: 67px;
+    margin-bottom: 70px;
+    h2{
+        font-family: Montserrat;
+       margin-bottom: 12px; 
+       
+    }
+    .head{
+        text-align: center;
+    }
+
+.images{
+    padding-bottom: 15px;
+}
+
+
+    img{
+     
+        height: 40vh;
+    }
+    .row{
+        padding: 4px;
+
+    }
+
+    .line{
+        width: $base-width;
+        border: $linetwo solid $black;
+        margin-bottom: 8px;
+        
+     }
+     span{
+        display: inline-block;
+        margin: 5px;
+     }
+    
+    .line2{
+        width: $base-width;
+        border:$linetwo solid $black;
+        margin-bottom: 8px;
+        
+     }
+     span{
+        display: inline-block;
+        margin: 5px;
+     }
+    
+}
+
+
+#about{
+  
+    padding-top: 67px;
+    padding-bottom: 70px;
+    background-color: $b-grd-color-aq;
+.star{
+    text-align: center;
+    color: $white;
+}
+.row{
+    margin-left: 150px;
+    margin-right: 150px;
+    color: $white;
+    
+}
+p{
+    font-family: Montserrat;
+}
+
+    .col6{
+        
+        padding: 12px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+       
+    }
+a{
+    font-family: Montserrat;
+    text-decoration: none;
+    background-color: "";
+    width: 180px;
+    text-align: center;
+    padding: 10px;
+    color: $white;
+    
+    border:$lineone solid;
+   
+}
+
+.line{
+    width:$base-width;
+    border: $linetwo solid $white;
+    margin-bottom: 8px;
+    
+ }
+ span{
+    display: inline-block;
+    margin: 5px;
+ }
+
+.line2{
+    margin-bottom: 8px;
+    
+    width:$base-width;
+    border: $linetwo solid $white;
+    
+    
+ }
+ span{
+    display: inline-block;
+    margin: 5px;
+ }
+     
+}
+
+
+
+
+
+
+
+#footer{
+   
+   background-color: $b-grd-color-light-gray;
+   padding-top: 70px;
+   padding-bottom: 40px;
+   color: $white;
+    .blue{
+        color: $b-grd-color-aq;
+    }
+p{
+    font-family: Montserrat;
+    text-align: center;
+}
+h4{
+    font-family: Montserrat;
+    text-align: center;
+}
+ 
+
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    align-items: center;
+    text-align: center;
+  
+    .circleMin{
+        margin-left: 10px;
+        border: $lineone solid $white;
+        align-content: center;
+        height: 50px;
+        width: 50px;
+       
+        border-radius: 50%;
+        gap: 40px;
+        text-align: center;
+    }
+}
+
+}
+
+ 
+
+
+
+
+#contact{
+    font-family: Montserrat;
+    // text-align: center;
+    padding-top: 43px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    // .container{
+    //     // margin-left: 150px;
+    //     // margin-right: 150px;
+    //     display: flex;
+    //     justify-content: center;
+    //     flex-direction: column;
+        
+    // }
+   
+    a{
+        font-family: Montserrat;
+       text-decoration: none;
+       color: $white;
+    }
+    .send{
+        font-family: Montserrat;
+      margin-top: 30px;
+        padding: 10px; 
+        background-color: $b-grd-color-aq;
+        width: 80px;
+        border-radius: 3px;
+        margin-bottom: 50px;
+      
+    }
+    .cont{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    }
+h2{
+    font-family: Montserrat;
+    margin-bottom: 4px;
+   
+}
+
+.line{
+    width:$base-width;
+    border: $linetwo solid $black;
+    
+    margin-bottom: 8px;
+ }
+ span{
+    display: inline-block;
+    margin: 5px;
+ }
+
+.line2{
+    width:$base-width;
+    border: $linetwo solid $black;
+    
+    margin-bottom: 8px;
+ }
+ span{
+    display: inline-block;
+    margin: 5px;
+ }
+ .form-control{
+    width: 800px;
+    padding: 25px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0px;
+ }
+
+
+ .message{
+    font-family: Montserrat;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+    padding: 25px;
+ }
+ 
+.forms{
+    padding-top: 12px;
+}
+
+.con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // margin-right:100px;
+}
+
+
+
+     
+}
+
+
+// copy
+@mixin copy{
+    font-family: Montserrat;
+    text-align: center;
+   p{
+    font-family: Montserrat;
+    background-color: $b-grd-color-darkgray;
+    padding: 30px;
+    color: $white;
+   }
+    
+}
+
+.copy{
+    @include copy;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 568px){
+
+
+.munehamb{
+    .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+
+
+  logo{
+    p{
+        font-size: 18px;
+    }
+    font-family: Montserrat;
+    color: $white;
+    background-color: #1B252F;
+    padding-top: 10px;
+    position: absolute;
+    // padding: 0px;
+    padding-left: 10px;
+    width: 100%;
+    
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+.navigation{
+    display: none;
+}
+
+
+
+
+    h2{
+        
+        font-size: 15px;
+    }
+
+   
+    
+    .banner{
+        padding-top: 70px;
+        padding-bottom: 36px;
+        overflow: hidden;
+        img{
+            height: 25vh;
+        }
+        h1{
+            font-size: 20px;
+        }
+        .icon{
+            font-size: 10px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+
+
+
+
+
+#portfolio{
+    
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    
+    img{
+       
+        width: 100%;
+        object-fit: cover;
+margin-top: 0px;
+padding-bottom: 0px;
+margin-top: 15px;
+    }
+    .col-md-4{
+        margin: 0px;
+        padding: 0px;
+    }
+    .row{
+        padding: 0px;
+    }
+    .contpics{
+padding-top: 16px;
+    }
+}
+
+#about{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    p{
+        padding-bottom: 20px;
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0px;
+    }
+    // .abouttwo{
+    //     padding-bottom: 20px;
+    // }
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+   
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+        color: white;
+    }
+    .col6{
+        padding: 2px;
+    }
+    a{
+        font-size: 12px;
+        width: 137px;
+        padding: 6px;
+    }
+    .button{
+        padding-top: 10px;
+    }
+}
+
+#contact{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    .container{
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+ 
+ .form-control {
+   width: 334px; 
+   font-size: 10px;
+   padding: 8px;
+   margin-top: 10px;
+   
+  }
+  
+  .row{
+    margin-left: 0px;
+    margin-right: 0px;
+        }
+ .con{
+    margin-right: 0px;
+ }
+
+ .message{
+    width: 335px;
+    padding: 8px;
+    font-size: 11px;
+    margin-top: 10px;
+ }
+ .container{
+    padding: 0px;
+ }
+ .send{
+    margin-left: 0px;
+    margin: 0px;
+    margin-top: 3px;
+    font-size: 12px; 
+    width: 50px;
+    padding: 5px;
+ }
+}
+
+
+
+#footer{
+   padding-top: 40px;
+   padding-bottom: 40px;
+
+    h4{
+    
+        font-size: 13px;
+    }
+    .colunm{
+        margin: 10px;
+    }
+       
+    
+    p{
+    
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    
+    i{
+        padding: 5px;
+    }
+    .icons{
+        padding-bottom: 10px;
+    }
+
+   
+}
+
+.copy{
+    font-size: 12px;
+p{
+    padding: 10px;
+}
+}
+
+
+
+}
+
+
+
+
+
+@media (min-width: 569px) and (max-width: 768px){
+
+    .munehamb{
+        span{
+            
+            padding-right: 25px;
+      
+    
+          }
+          logo{
+            p{
+                font-size: 18px;
+            }
+            font-family: Montserrat;
+            color: $white;
+            background-color: #1B252F;
+            padding-top: 10px;
+            position: absolute;
+            // padding: 0px;
+            padding-left: 20px;
+            width: 100%;
+            
+        }
+
+
+        .overlay {
+            height: 100%;
+        }
+
+    }
+
+   
+    
+
+
+    nav{
+        img{
+         top: 6px;
+        }
+         
+ #btn{
+     display: block;
+     margin-right: 30px;
+ }
+ 
+         a{
+            text-decoration: none;
+             margin: 0px;
+             font-size: 17px;
+         }
+         ul{
+             position: absolute;
+             width: 100%;
+             height: 40vh;
+             background: #000000f2;
+             top: 80px;
+             left: -100%;
+             text-align: center;
+ transition: all .5s;
+ padding-left: 0px;
+ 
+         }
+         li{
+             display: block;
+             margin: 25px 0;
+             line-height: 50px;
+         }
+         a{
+             font-size: 20px;
+ 
+         }
+         #check:checked ~ ul{
+ left: 0;
+         }
+         #check:checked ~ lable #cancel{
+             display:block;
+             
+         }
+ 
+     }
+
+
+
+
+
+
+
+
+
+
+    h2{
+                font-size: 35px;
+            }
+        
+           
+            .navigation{
+                display: none;
+            }
+            .banner{
+                padding-top: 110px;
+                padding-bottom: 46px;
+                overflow: hidden;
+                img{
+                    height: 25vh;
+                }
+                h1{
+                    font-size: 50px;
+                }
+                .icon{
+                    font-size: 10px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        
+        #portfolio{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            overflow: hidden;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-bottom: 0px;
+            .allpics{
+                display: none;
+            }
+.two{
+    width: 230px;
+    height: 20vh;
+    object-fit: cover;
+margin-top: 0px;
+padding-bottom: 0px;
+margin: 4px;
+}
+
+.one{
+    width: 230px;
+                height: 20vh;
+                object-fit: cover;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        margin: 4px;
+        
+}
+
+.three{
+    width: 230px;
+    height: 20vh;
+    object-fit: cover;
+margin-top: 0px;
+padding-bottom: 0px;
+margin: 4px;
+
+}
+
+.four{
+    width: 230px;
+    height: 20vh;
+    object-fit: cover;
+margin-top: 0px;
+padding-bottom: 0px;
+margin-left: 4px;
+}
+
+.five{
+    width: 230px;
+    height: 20vh;
+    object-fit: cover;
+margin-top: 0px;
+padding-bottom: 0px;
+margin-left: 8px;
+}
+
+.six{
+    width: 230px;
+    height: 20vh;
+    object-fit: cover;
+margin-top: 0px;
+padding-bottom: 0px;
+margin-left: 12px;
+}
+
+
+.container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+            .col-md-4{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .g-4{
+                margin: 5px;
+            }
+            .contpics{
+        padding-top: 0px;
+            }
+        }
+        
+        #about{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            overflow: hidden;
+            p{
+                font-size: 18px;
+                margin: 4px;
+            }
+           
+            .row{
+                margin-left: 0px;
+                margin-right: 0px;
+                color: white;
+            }
+            .col6{
+                padding: 2px;
+            }
+            a{
+                font-size: 16px;
+                width: 163px;
+                padding: 6px;
+            }
+            .button{
+                padding-top: 20px;
+            }
+        }
+        
+        #contact{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-left: 38px;
+            margin-right: 38px;
+            overflow: hidden;
+
+            .container{
+                margin-left: 0px;
+                margin-right: 0px;
+                
+            }
+         
+         .form-control {
+           width: 690px; 
+           margin-right: 0px;
+           font-size: 18px;
+           padding: 20px;
+           margin-top: 12px;
+          
+           
+          }
+          
+          .row{
+            margin-left: 0px;
+            margin-right: 0px;
+                }
+         .con{
+            margin-right: 0px;
+         }
+        
+         .message{
+            width: 690px;
+            padding: 20px;
+            font-size: 19px;
+            margin-top: 12px;
+         }
+         .container{
+            padding: 0px;
+         }
+         .send{
+            text-align: center;
+           margin-bottom: 0px;
+            margin-top: 3px;
+            font-size: 16px; 
+            width: 73px;
+            padding: 10px;
+         }
+         
+        }
+        
+        #footer{
+           padding-top: 50px;
+           padding-bottom:50px;
+        
+            h4{
+                font-size: 25px;
+            }
+            p{
+                font-size: 18px;
+                margin-bottom: 0px;
+            }
+            i{
+                padding: 10px;
+            }
+            .icons{
+                padding-bottom: 10px;
+            }
+
+            .icons .circleMin {
+                margin-left: 10px;
+                border: 1px solid #ffffff;
+                align-content: center;
+                height: 47px;
+                width: 50px;
+                border-radius: 100%;
+                gap: 40px;
+                text-align: center;
+            }
+           
+        }
+        
+        .copy{
+            font-size: 18px;
+        p{
+            padding: 10px;
+        }
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:769px) and (max-width:950px){
+
+ h2{
+                font-size: 35px;
+            }
+        
+           
+            
+            .banner{
+                padding-top: 50px;
+                padding-bottom: 46px;
+                overflow: hidden;
+                img{
+                    height: 25vh;
+                }
+                h1{
+                    font-size: 50px;
+                }
+                .icon{
+                    font-size: 10px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        
+        #portfolio{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            overflow: hidden;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-bottom: 0px;
+            .allpics{
+                display: none;
+            }
+           
+.two{
+    width: 230px;
+    height: 20vh;
+    object-fit: cover;
+margin-top: 0px;
+padding-bottom: 0px;
+margin: 4px;
+
+}
+
+.one{
+    width: 230px;
+                height: 20vh;
+                object-fit: cover;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        margin: 4px;
+       
+}
+
+.three{
+    width: 230px;
+    height: 20vh;
+    object-fit: cover;
+margin-top: 0px;
+padding-bottom: 0px;
+margin: 4px;
+
+}
+
+.four{
+    width: 230px;
+    height: 20vh;
+    object-fit: cover;
+margin-top: 0px;
+padding-bottom: 0px;
+margin-left: 4px;
+}
+
+.five{
+    width: 230px;
+    height: 20vh;
+    object-fit: cover;
+margin-top: 0px;
+padding-bottom: 0px;
+margin-left: 8px;
+}
+
+.six{
+    width: 230px;
+    height: 20vh;
+    object-fit: cover;
+margin-top: 0px;
+padding-bottom: 0px;
+margin-left: 12px;
+}
+
+
+.container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+        
+            .col-md-4{
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            .g-4{
+                margin: 5px;
+            }
+            .contpics{
+        padding-top: 0px;
+            }
+        }
+        
+        #about{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            overflow: hidden;
+            p{
+                font-size: 18px;
+                margin: 4px;
+            }
+           
+            .row{
+                margin-left: 0px;
+                margin-right: 0px;
+                color: white;
+            }
+            .col6{
+                padding: 2px;
+            }
+            a{
+                font-size: 16px;
+                width: 163px;
+                padding: 6px;
+            }
+            .button{
+                padding-top: 18px;
+            }
+        }
+        
+        #contact{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-left: 38px;
+            margin-right: 38px;
+            overflow: hidden;
+
+            .container{
+                margin-left: 0px;
+                margin-right: 0px;
+                
+            }
+         
+         .form-control {
+            margin-top: 12px;
+           width: 690px; 
+           margin-right: 0px;
+           font-size: 18px;
+           padding: 25px;
+          
+           
+          }
+          
+          .row{
+            margin-left: 0px;
+            margin-right: 0px;
+                }
+         .con{
+            margin-right: 0px;
+         }
+        //  .forms{
+        //     text-align: center;
+        //     padding-left: 0px;
+        //     padding-right: 0px;
+        //  }
+         .message{
+            margin-top: 12px;
+            width: 690px;
+            padding: 25px;
+            font-size: 19px;
+         }
+
+         .send{
+            text-align: center;
+           margin-bottom: 0px;
+            margin-top: 3px;
+            font-size: 16px; 
+            width: 94px;
+            padding: 17px;
+         }
+        }
+        
+        #footer{
+           padding-top: 50px;
+           padding-bottom:50px;
+        
+            h4{
+                font-size: 25px;
+            }
+            p{
+                font-size: 18px;
+                margin-bottom: 0px;
+            }
+            i{
+                padding: 10px;
+            }
+            .icons{
+                padding-bottom: 10px;
+
+                  .circleMin {
+                    margin-left: 10px;
+                    border: 1px solid #ffffff;
+                    align-content: center;
+                    height: 47px;
+                    width: 50px;
+                    border-radius: 50%;
+                    gap: 40px;
+                    text-align: center;
+                }
+
+
+            }
+
+           
+           
+        }
+        
+        .copy{
+            font-size: 18px;
+        p{
+            padding: 10px;
+        }
+        }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:951px) and (max-width:1024px){
+
+    h2{
+                   font-size: 35px;
+               }
+           
+              
+               
+               .banner{
+                   padding-top: 70px;
+                   padding-bottom: 66px;
+                   overflow: hidden;
+                   img{
+                       height: 25vh;
+                   }
+                   h1{
+                       font-size: 50px;
+                   }
+                   .icon{
+                       font-size: 10px;
+                   }
+                   p{
+                       font-size: 18px;
+                   }
+               }
+           
+           #portfolio{
+               padding-top: 70px;
+               padding-bottom: 70px;
+               overflow: hidden;
+               padding-left: 0px;
+               padding-right: 0px;
+               margin-bottom: 0px;
+               .allpics{
+                   display: none;
+               }
+   .two{
+       width: 305px;
+       height: 20vh;
+       object-fit: cover;
+   margin-top: 0px;
+   padding-bottom: 0px;
+   margin: 4px;
+   }
+   
+   .one{
+       width: 305px;
+                   height: 20vh;
+                   object-fit: cover;
+           margin-top: 0px;
+           padding-bottom: 0px;
+           margin: 4px;
+          
+   }
+   
+   .three{
+       width: 305px;
+       height: 20vh;
+       object-fit: cover;
+   margin-top: 0px;
+   padding-bottom: 0px;
+   margin: 4px;
+   
+   }
+   
+   .four{
+    width: 305px;
+       height: 20vh;
+       object-fit: cover;
+   margin-top: 4px;
+   padding-bottom: 0px;
+   margin-left: 4px;
+   }
+   
+   .five{
+    width: 305px;
+       height: 20vh;
+       object-fit: cover;
+   margin-top: 4px;
+   padding-bottom: 0px;
+   margin-left: 12px;
+   }
+   
+   .six{
+    width: 305px;
+       height: 20vh;
+       object-fit: cover;
+   margin-top: 4px;
+   padding-bottom: 0px;
+  
+   margin-left: 21px;
+   }
+   
+   
+   .container{
+       padding-left: 0px;
+       padding-right: 0px;
+   }
+          
+               .col-md-4{
+                   margin: 0px;
+                   padding: 0px;
+               }
+        
+               .g-4{
+                   margin: 5px;
+               }
+               .contpics{
+           padding-top: 0px;
+               }
+
+
+             
+           }
+           
+           #about{
+               padding-top: 70px;
+               padding-bottom: 70px;
+               overflow: hidden;
+               p{
+                   font-size: 18px;
+                   margin: 3px;
+               }
+              
+               .row{
+                   margin-left: 0px;
+                   margin-right: 0px;
+                   color: white;
+               }
+               .col6{
+                   padding: 2px;
+               }
+               a{
+                   font-size: 18px;
+                   width: 180px;
+                   padding: 6px;
+               }
+               .button{
+                   padding-top: 20px;
+               }
+           }
+           
+           #contact{
+               padding-top: 70px;
+               padding-bottom: 70px;
+               margin-left: 38px;
+               margin-right: 38px;
+               overflow: hidden;
+
+               .container{
+                   margin-left: 0px;
+                   margin-right: 0px;
+                   padding: 0px;
+                  
+               }
+            
+            .form-control {
+                margin-top: 15px;
+              width: 918px; 
+              margin-right: 0px;
+              font-size: 18px;
+              padding: 30px;
+             
+              
+             }
+             
+             .row{
+                
+               margin-left: 0px;
+               margin-right: 0px;
+                   }
+            .con{
+               margin-right: 0px;
+            }
+           
+            .message{
+                margin-top: 15px;
+               width: 918px;
+               padding: 30px;
+               font-size: 19px;
+            }
+    
+            .send{
+                text-align: center;
+              margin-bottom: 0px;
+               margin-top: 3px;
+               width: 107px;
+               padding: 15px;
+            }
+            a{
+                font-size: 18px;
+            }
+           }
+           
+           #footer{
+              padding-top: 70px;
+              padding-bottom:70px;
+           
+               h4{
+                   font-size: 25px;
+               }
+               p{
+                   font-size: 18px;
+                   margin-bottom: 0px;
+               }
+               i{
+                   padding: 10px;
+               }
+               .icons{
+                   padding-bottom: 10px;
+                    .circleMin {
+                    margin-left: 10px;
+                    border: 1px solid #ffffff;
+                    align-content: center;
+                    height: 55px;
+                    width: 55px;
+                    border-radius: 50%;
+                    gap: 40px;
+                    text-align: center;
+                }
+               }
+   
+            
+           }
+           
+           .copy{
+               font-size: 18px;
+           p{
+               padding: 10px;
+           }
+           }
+   
+   
+   }
+   
+   
+   
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+@media (min-width:1025px) and (max-width:1366px){
+.navigation{
+    a{
+        font-size: 15px;
+    }
+    p{
+        font-size: 22px;
+    }
+}
+             h2{       
+                   font-size: 36px;
+               }
+           
+              
+               
+               .banner{
+                   padding-top: 70px;
+                   padding-bottom: 66px;
+                   overflow: hidden;
+
+                   img{
+                    width: 100%;
+                    height: 35vh;
+                    margin-bottom: 30px;
+                  
+                }
+
+                   h1{
+                       font-size: 52px;
+                   }
+        
+                   p{
+                       font-size: 20px;
+                   }
+               }
+           
+           #portfolio{
+               padding-top: 70px;
+               overflow: hidden;
+               margin-bottom: 70px;
+
+           }
+
+           
+           #about{
+               padding-top: 70px;
+               padding-bottom: 70px;
+            
+               p{
+                   font-size: 18px;
+                   
+               }
+               a{
+                font-size: 18px;
+                width: 194px;
+                padding: 6px;
+            }
+           
+               .button{
+                   padding-top: 20px;
+               }
+           }
+           
+           #contact{
+               padding-top: 70px;
+ .send{
+    margin-left: 10px;
+    margin-bottom: 70px;
+ }
+ .message{
+    margin-left: 12px;
+ }
+.form-control{
+    margin: 15px;
+}
+           }
+           
+           #footer{
+              padding-top: 50px;
+              padding-bottom:45px;
+           
+               h4{
+                   font-size: 25px;
+               }
+               p{
+                   font-size: 18px;
+                   margin-bottom: 0px;
+               }
+               i{
+                   padding: 10px;
+               }
+               .icons{
+                   padding-bottom: 10px;
+               }
+
+   
+              
+           }
+           
+           .copy{
+               font-size: 18px;
+           p{
+               padding: 12px;
+           }
+           }
+   
+   
+   }
+   
+   
+   
+   
+   
+   
