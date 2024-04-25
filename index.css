@@ -127,6 +127,10 @@
   border: 2px solid #ffffff;
   margin-bottom: 8px;
 }
+.banner .icon {
+  font-size: 35px;
+  color: white;
+}
 
 #portfolio {
   padding-top: 67px;
@@ -165,6 +169,10 @@
 #portfolio span {
   display: inline-block;
   margin: 5px;
+}
+#portfolio .icon {
+  font-size: 35px;
+  color: black;
 }
 
 #about {
@@ -220,6 +228,10 @@
   display: inline-block;
   margin: 5px;
 }
+#about .icon {
+  font-size: 35px;
+  color: white;
+}
 
 #footer {
   background-color: #2d3e50;
@@ -269,6 +281,9 @@
   color: #ffffff;
 }
 #contact .send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Montserrat;
   margin-top: 30px;
   padding: 10px;
@@ -329,6 +344,10 @@
   justify-content: center;
   align-items: center;
 }
+#contact .icon {
+  font-size: 35px;
+  color: black;
+}
 
 .copy {
   font-family: Montserrat;
@@ -369,7 +388,7 @@
     font-size: 15px;
   }
   .banner {
-    padding-top: 70px;
+    padding-top: 92px;
     padding-bottom: 36px;
     overflow: hidden;
   }
@@ -384,6 +403,13 @@
   }
   .banner p {
     font-size: 12px;
+  }
+  .banner .icon {
+    font-size: 25px;
+    color: white;
+  }
+  .banner .line, .banner .line2 {
+    width: 50px;
   }
   #portfolio {
     padding-top: 40px;
@@ -410,6 +436,13 @@
   }
   #portfolio .contpics {
     padding-top: 16px;
+  }
+  #portfolio .images .icon {
+    font-size: 25px;
+    color: #000000;
+  }
+  #portfolio .images .line, #portfolio .images .line2 {
+    width: 50px;
   }
   #about {
     padding-top: 40px;
@@ -442,6 +475,13 @@
   }
   #about .button {
     padding-top: 10px;
+  }
+  #about .star .icon {
+    font-size: 25px;
+    color: white;
+  }
+  #about .star .line, #about .star .line2 {
+    width: 50px;
   }
   #contact {
     padding-top: 40px;
@@ -477,12 +517,22 @@
     padding: 0px;
   }
   #contact .send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 0px;
     margin: 0px;
     margin-top: 3px;
     font-size: 12px;
     width: 50px;
     padding: 5px;
+  }
+  #contact .images .icon {
+    font-size: 25px;
+    color: black;
+  }
+  #contact .images .line, #contact .images .line2 {
+    width: 50px;
   }
   #footer {
     padding-top: 40px;
@@ -501,8 +551,15 @@
   #footer i {
     padding: 5px;
   }
-  #footer .icons {
-    padding-bottom: 10px;
+  #footer .icons .circleMin {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 30px;
+    height: 30px;
+  }
+  #footer .icons .looper {
+    font-size: 10px;
   }
   .copy {
     font-size: 12px;
@@ -513,7 +570,8 @@
 }
 @media (min-width: 569px) and (max-width: 768px) {
   .munehamb span {
-    padding-right: 25px;
+    padding-top: 13px;
+    padding-right: 50px;
   }
   .munehamb logo {
     font-family: Montserrat;
@@ -525,10 +583,20 @@
     width: 100%;
   }
   .munehamb logo p {
+    padding: 12px;
     font-size: 18px;
   }
   .munehamb .overlay {
     height: 100%;
+  }
+  .munehamb .overlay .closebtn {
+    position: absolute;
+    top: -18px;
+    right: 39px;
+    font-size: 60px;
+  }
+  .munehamb .overlay-content {
+    top: 10%;
   }
   nav img {
     top: 6px;
@@ -568,7 +636,7 @@
     display: block;
   }
   h2 {
-    font-size: 35px;
+    font-size: 31px;
   }
   .navigation {
     display: none;
@@ -582,13 +650,16 @@
     height: 25vh;
   }
   .banner h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .banner .icon {
-    font-size: 10px;
+    font-size: 30px;
   }
   .banner p {
-    font-size: 18px;
+    font-size: 17px;
+  }
+  .banner .line, .banner .line2 {
+    width: 60px;
   }
   #portfolio {
     padding-top: 50px;
@@ -669,14 +740,26 @@
   #portfolio .contpics {
     padding-top: 0px;
   }
+  #portfolio .images .icon {
+    font-size: 30px;
+  }
+  #portfolio .images .line, #portfolio .images .line2 {
+    width: 60px;
+  }
   #about {
     padding-top: 50px;
     padding-bottom: 50px;
     overflow: hidden;
   }
   #about p {
-    font-size: 18px;
+    font-size: 17px;
     margin: 4px;
+  }
+  #about .star .icon {
+    font-size: 30px;
+  }
+  #about .star .line, #about .star .line2 {
+    width: 60px;
   }
   #about .row {
     margin-left: 0px;
@@ -736,15 +819,21 @@
     width: 73px;
     padding: 10px;
   }
+  #contact .images .icon {
+    font-size: 30px;
+  }
+  #contact .images .line, #contact .images .line2 {
+    width: 60px;
+  }
   #footer {
     padding-top: 50px;
     padding-bottom: 50px;
   }
   #footer h4 {
-    font-size: 25px;
+    font-size: 21px;
   }
   #footer p {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 0px;
   }
   #footer i {
@@ -764,7 +853,7 @@
     text-align: center;
   }
   .copy {
-    font-size: 18px;
+    font-size: 17px;
   }
   .copy p {
     padding: 10px;
@@ -772,7 +861,7 @@
 }
 @media (min-width: 769px) and (max-width: 950px) {
   h2 {
-    font-size: 35px;
+    font-size: 31px;
   }
   .banner {
     padding-top: 50px;
@@ -783,13 +872,13 @@
     height: 25vh;
   }
   .banner h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .banner .icon {
-    font-size: 10px;
+    font-size: 40px;
   }
   .banner p {
-    font-size: 18px;
+    font-size: 17px;
   }
   #portfolio {
     padding-top: 50px;
@@ -876,7 +965,7 @@
     overflow: hidden;
   }
   #about p {
-    font-size: 18px;
+    font-size: 17px;
     margin: 4px;
   }
   #about .row {
@@ -910,7 +999,7 @@
     margin-top: 12px;
     width: 690px;
     margin-right: 0px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 25px;
   }
   #contact .row {
@@ -939,10 +1028,10 @@
     padding-bottom: 50px;
   }
   #footer h4 {
-    font-size: 25px;
+    font-size: 21px;
   }
   #footer p {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 0px;
   }
   #footer i {
@@ -962,7 +1051,7 @@
     text-align: center;
   }
   .copy {
-    font-size: 18px;
+    font-size: 17px;
   }
   .copy p {
     padding: 10px;
@@ -984,10 +1073,13 @@
     font-size: 50px;
   }
   .banner .icon {
-    font-size: 10px;
+    font-size: 35px;
   }
   .banner p {
-    font-size: 18px;
+    font-size: 20px;
+  }
+  .navigation a {
+    font-size: 14px;
   }
   #portfolio {
     padding-top: 70px;

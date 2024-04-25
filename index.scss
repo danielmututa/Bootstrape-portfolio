@@ -214,8 +214,6 @@ h1{
     margin-bottom: 8px;
     width:70px;
     border: $linetwo solid $white;
-    
-    
  }
  span{
     display: inline-block;
@@ -225,11 +223,13 @@ h1{
 .line2{
     width:70px;
     border: $linetwo solid $white;
-    margin-bottom: 8px;
-    
+    margin-bottom: 8px; 
  }
 
-
+.icon{
+    font-size: 35px;
+    color: white;
+}
 
 }
 
@@ -289,6 +289,11 @@ h1{
         display: inline-block;
         margin: 5px;
      }
+
+     .icon{
+        font-size: 35px;
+        color: black;
+    }
     
 }
 
@@ -359,6 +364,11 @@ a{
     display: inline-block;
     margin: 5px;
  }
+
+ .icon{
+    font-size: 35px;
+    color: white;
+}
      
 }
 
@@ -406,6 +416,7 @@ h4{
         border-radius: 50%;
         gap: 40px;
         text-align: center;
+
     }
 }
 
@@ -432,6 +443,9 @@ h4{
        color: $white;
     }
     .send{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: Montserrat;
       margin-top: 30px;
         padding: 10px; 
@@ -501,10 +515,13 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // margin-right:100px;
+   
 }
 
-
+.icon{
+    font-size: 35px;
+    color: black;
+}
 
      
 }
@@ -589,7 +606,7 @@ h2{
    
     
     .banner{
-        padding-top: 70px;
+        padding-top: 92px;
         padding-bottom: 36px;
         overflow: hidden;
         img{
@@ -604,6 +621,17 @@ h2{
         p{
             font-size: 12px;
         }
+
+.icon{
+    font-size: 25px;
+    color: white;
+}
+
+.line,.line2{
+    width: 50px;
+}
+
+
     }
 
 
@@ -637,6 +665,17 @@ margin-top: 15px;
     .contpics{
 padding-top: 16px;
     }
+   .images{
+    .icon{
+        font-size: 25px;
+        color: #000000;
+           } 
+
+           .line,.line2{
+            width: 50px;
+           }
+   }
+   
 }
 
 #about{
@@ -650,9 +689,7 @@ padding-top: 16px;
         padding-right: 20px;
         margin: 0px;
     }
-    // .abouttwo{
-    //     padding-bottom: 20px;
-    // }
+  
     .container{
         padding-left: 0px;
         padding-right: 0px;
@@ -673,6 +710,15 @@ padding-top: 16px;
     }
     .button{
         padding-top: 10px;
+    }
+    .star{
+        .icon{
+            font-size: 25px;
+            color: white;
+        }
+        .line,.line2{
+            width: 50px;
+        }
     }
 }
 
@@ -714,12 +760,24 @@ padding-top: 16px;
     padding: 0px;
  }
  .send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 0px;
     margin: 0px;
     margin-top: 3px;
     font-size: 12px; 
     width: 50px;
     padding: 5px;
+ }
+ .images{
+    .icon{
+        font-size: 25px;
+        color: black;
+    }
+    .line,.line2{
+        width: 50px;
+    }
  }
 }
 
@@ -747,8 +805,19 @@ padding-top: 16px;
     i{
         padding: 5px;
     }
+    
     .icons{
-        padding-bottom: 10px;
+     .circleMin {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 30px;
+        height: 30px;
+     }
+     .looper{
+        font-size: 10px;
+        
+     }
     }
 
    
@@ -773,13 +842,14 @@ p{
 
     .munehamb{
         span{
-            
-            padding-right: 25px;
+            padding-top: 13px;
+            padding-right: 50px;
       
     
           }
           logo{
             p{
+                padding: 12px;
                 font-size: 18px;
             }
             font-family: Montserrat;
@@ -787,7 +857,7 @@ p{
             background-color: #1B252F;
             padding-top: 10px;
             position: absolute;
-            // padding: 0px;
+
             padding-left: 20px;
             width: 100%;
             
@@ -796,6 +866,15 @@ p{
 
         .overlay {
             height: 100%;
+        }
+        .overlay .closebtn {
+            position: absolute;
+            top: -18px;
+            right: 39px;
+            font-size: 60px;
+        }
+        .overlay-content{
+            top: 10%;
         }
 
     }
@@ -860,7 +939,7 @@ p{
 
 
     h2{
-                font-size: 35px;
+                font-size: 31px;
             }
         
            
@@ -875,13 +954,16 @@ p{
                     height: 25vh;
                 }
                 h1{
-                    font-size: 50px;
+                    font-size: 40px;
                 }
                 .icon{
-                    font-size: 10px;
+                    font-size: 30px;
                 }
                 p{
-                    font-size: 18px;
+                    font-size: 17px;
+                }
+                .line,.line2{
+                    width: 60px;
                 }
             }
         
@@ -967,6 +1049,14 @@ margin-left: 12px;
             .contpics{
         padding-top: 0px;
             }
+            .images{
+                .icon{
+                    font-size: 30px;
+                }
+                .line,.line2{
+                    width: 60px;
+                }
+            }
         }
         
         #about{
@@ -974,8 +1064,16 @@ margin-left: 12px;
             padding-bottom: 50px;
             overflow: hidden;
             p{
-                font-size: 18px;
+                font-size: 17px;
                 margin: 4px;
+            }
+            .star{
+                .icon{
+                    font-size: 30px;
+                }
+                .line,.line2{
+                    width: 60px;
+                }
             }
            
             .row{
@@ -1044,6 +1142,14 @@ margin-left: 12px;
             width: 73px;
             padding: 10px;
          }
+         .images{
+            .icon{
+                font-size: 30px;
+            }
+            .line,.line2{
+                width: 60px;
+            }
+         }
          
         }
         
@@ -1052,10 +1158,10 @@ margin-left: 12px;
            padding-bottom:50px;
         
             h4{
-                font-size: 25px;
+                font-size: 21px;
             }
             p{
-                font-size: 18px;
+                font-size: 17px;
                 margin-bottom: 0px;
             }
             i{
@@ -1079,7 +1185,7 @@ margin-left: 12px;
         }
         
         .copy{
-            font-size: 18px;
+            font-size: 17px;
         p{
             padding: 10px;
         }
@@ -1099,7 +1205,7 @@ margin-left: 12px;
 @media (min-width:769px) and (max-width:950px){
 
  h2{
-                font-size: 35px;
+                font-size: 31px;
             }
         
            
@@ -1112,13 +1218,13 @@ margin-left: 12px;
                     height: 25vh;
                 }
                 h1{
-                    font-size: 50px;
+                    font-size: 40px;
                 }
                 .icon{
-                    font-size: 10px;
+                    font-size: 40px;
                 }
                 p{
-                    font-size: 18px;
+                    font-size: 17px;
                 }
             }
         
@@ -1214,7 +1320,7 @@ margin-left: 12px;
             padding-bottom: 50px;
             overflow: hidden;
             p{
-                font-size: 18px;
+                font-size: 17px;
                 margin: 4px;
             }
            
@@ -1253,7 +1359,7 @@ margin-left: 12px;
             margin-top: 12px;
            width: 690px; 
            margin-right: 0px;
-           font-size: 18px;
+           font-size: 16px;
            padding: 25px;
           
            
@@ -1266,11 +1372,7 @@ margin-left: 12px;
          .con{
             margin-right: 0px;
          }
-        //  .forms{
-        //     text-align: center;
-        //     padding-left: 0px;
-        //     padding-right: 0px;
-        //  }
+        
          .message{
             margin-top: 12px;
             width: 690px;
@@ -1293,10 +1395,10 @@ margin-left: 12px;
            padding-bottom:50px;
         
             h4{
-                font-size: 25px;
+                font-size: 21px;
             }
             p{
-                font-size: 18px;
+                font-size: 17px;
                 margin-bottom: 0px;
             }
             i{
@@ -1324,7 +1426,7 @@ margin-left: 12px;
         }
         
         .copy{
-            font-size: 18px;
+            font-size: 17px;
         p{
             padding: 10px;
         }
@@ -1364,11 +1466,18 @@ margin-left: 12px;
                        font-size: 50px;
                    }
                    .icon{
-                       font-size: 10px;
+                       font-size: 35px;
                    }
                    p{
-                       font-size: 18px;
+                       font-size: 20px;
                    }
+                  
+                   
+               }
+               .navigation{
+                a{
+                    font-size: 14px;
+                }
                }
            
            #portfolio{
