@@ -104,14 +104,19 @@ $lineone:1px;
         font-family: Montserrat;
         padding-right: 15px;
     position: absolute;
-        // float: right;
 top: 0;
 right: 0;
       }
       a{
         font-family: Montserrat;
       }
+
+
 }
+
+
+
+
 
   
   @media screen and (min-width: 789px) {
@@ -122,31 +127,25 @@ right: 0;
 
 
 
+.navigation.scrolled{
+    background-color: #ffffff;
+    opacity: 0.98;
+}
+.navigation.scrolled .nav a{
+    color: #000000;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.navigation.scrolled p{
+    color: #000000;
+}
 
 
 @mixin navigation{
-    
+    position:sticky;
+    top: 0;
+    width: 100%;
     background-color: $b-grd-color-light-gray;
+    transition: background-color 0.4s ease-in-out;
    
     .container{
         display: flex;
@@ -154,12 +153,14 @@ right: 0;
         align-items: center;
 
     }
+   
     p{
         font-family: Montserrat;
         font-size: $font-banner-paragraph;
         color: $white;
         font-weight: bolder;
         margin-top: 10px;
+        transition: color 0.4s ease-in-out;
     }
  a{
     font-family: Montserrat;
@@ -167,6 +168,7 @@ right: 0;
     font-size: 12px;
     text-decoration: none;
     color: $white;
+    transition: color 0.4s ease-in-out;
  }
 
  
@@ -546,22 +548,15 @@ h2{
 
 
 
-
-
-
-
-
-
-
 @media (max-width: 568px){
 
 
 .munehamb{
     .overlay a {font-size: 20px}
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+  font-size: 54px;
+  top: -25px;
+  right: 5px;
   }
 
 
@@ -574,14 +569,11 @@ h2{
     background-color: #1B252F;
     padding-top: 10px;
     position: absolute;
-    // padding: 0px;
     padding-left: 10px;
     width: 100%;
+   
     
 }
-
-
-
 
 
 }
@@ -842,6 +834,7 @@ p{
 
     .munehamb{
         span{
+            position: absolute;
             padding-top: 13px;
             padding-right: 50px;
       
@@ -857,7 +850,6 @@ p{
             background-color: #1B252F;
             padding-top: 10px;
             position: absolute;
-
             padding-left: 20px;
             width: 100%;
             
@@ -947,7 +939,7 @@ p{
                 display: none;
             }
             .banner{
-                padding-top: 110px;
+                padding-top: 138px;
                 padding-bottom: 46px;
                 overflow: hidden;
                 img{

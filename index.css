@@ -65,8 +65,25 @@
     display: none;
   }
 }
+.navigation.scrolled {
+  background-color: #ffffff;
+  opacity: 0.98;
+}
+
+.navigation.scrolled .nav a {
+  color: #000000;
+}
+
+.navigation.scrolled p {
+  color: #000000;
+}
+
 .navigation {
+  position: sticky;
+  top: 0;
+  width: 100%;
   background-color: #2d3e50;
+  transition: background-color 0.4s ease-in-out;
 }
 .navigation .container {
   display: flex;
@@ -79,6 +96,7 @@
   color: #ffffff;
   font-weight: bolder;
   margin-top: 10px;
+  transition: color 0.4s ease-in-out;
 }
 .navigation a {
   font-family: Montserrat;
@@ -86,6 +104,7 @@
   font-size: 12px;
   text-decoration: none;
   color: #ffffff;
+  transition: color 0.4s ease-in-out;
 }
 
 .banner {
@@ -365,9 +384,9 @@
     font-size: 20px;
   }
   .munehamb .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    font-size: 54px;
+    top: -25px;
+    right: 5px;
   }
   .munehamb logo {
     font-family: Montserrat;
@@ -570,6 +589,7 @@
 }
 @media (min-width: 569px) and (max-width: 768px) {
   .munehamb span {
+    position: absolute;
     padding-top: 13px;
     padding-right: 50px;
   }
@@ -642,7 +662,7 @@
     display: none;
   }
   .banner {
-    padding-top: 110px;
+    padding-top: 138px;
     padding-bottom: 46px;
     overflow: hidden;
   }
