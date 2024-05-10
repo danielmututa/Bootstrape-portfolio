@@ -1282,9 +1282,9 @@
     padding: 10px;
   }
 }
-@media (min-width: 1025px) and (max-width: 1366px) {
+@media only screen and (min-width: 1399.98px) {
   .navigation a {
-    font-size: 15px;
+    font-size: 16px;
   }
   .navigation p {
     font-size: 22px;
@@ -1293,8 +1293,8 @@
     font-size: 36px;
   }
   .banner {
-    padding-top: 70px;
-    padding-bottom: 66px;
+    padding-top: 100px;
+    padding-bottom: 96px;
     overflow: hidden;
   }
   .banner img {
@@ -1309,13 +1309,13 @@
     font-size: 20px;
   }
   #portfolio {
-    padding-top: 70px;
+    padding-top: 100px;
     overflow: hidden;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
   #about {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   #about p {
     font-size: 18px;
@@ -1328,22 +1328,30 @@
   #about .button {
     padding-top: 20px;
   }
+  #about .row {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
   #contact {
-    padding-top: 70px;
+    padding-bottom: 30px;
+    padding-top: 100px;
   }
   #contact .send {
     margin-left: 10px;
     margin-bottom: 70px;
   }
   #contact .message {
+    font-weight: 500;
     margin-left: 12px;
   }
   #contact .form-control {
+    font-weight: 500;
+    padding: 22px;
     margin: 15px;
   }
   #footer {
-    padding-top: 50px;
-    padding-bottom: 45px;
+    padding-top: 60px;
+    padding-bottom: 50px;
   }
   #footer h4 {
     font-size: 25px;
@@ -1363,10 +1371,5 @@
   }
   .copy p {
     padding: 12px;
-  }
-}
-@media (min-width: 1399px) {
-  #portfolio img {
-    height: 36vh;
   }
 }/*# sourceMappingURL=index.css.map */
