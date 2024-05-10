@@ -8,7 +8,7 @@
   src: url("Montserrat-Bold.ttf");
 }
 .munehamb .overlay {
-  height: 100%;
+  height: 125vh;
   width: 0;
   position: absolute;
   z-index: 1;
@@ -340,6 +340,7 @@
   margin: 5px;
 }
 #contact .form-control {
+  margin-bottom: 15px;
   width: 800px;
   padding: 25px;
   border-top: none;
@@ -384,9 +385,9 @@
     font-size: 20px;
   }
   .munehamb .overlay .closebtn {
-    font-size: 54px;
-    top: -25px;
-    right: 5px;
+    font-size: 61px;
+    top: -31px;
+    right: 3px;
   }
   .munehamb logo {
     font-family: Montserrat;
@@ -1362,5 +1363,10 @@
   }
   .copy p {
     padding: 12px;
+  }
+}
+@media (min-width: 1399px) {
+  #portfolio img {
+    height: 36vh;
   }
 }/*# sourceMappingURL=index.css.map */
