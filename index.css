@@ -1470,4 +1470,300 @@
   .copy p {
     padding: 12px;
   }
+}
+@media only screen and (min-width: 766px) and (max-width: 767.9px) {
+  .munehamb span {
+    position: absolute;
+    padding-top: 13px;
+    padding-right: 50px;
+  }
+  .munehamb logo {
+    font-family: Montserrat;
+    color: #ffffff;
+    background-color: #1B252F;
+    padding-top: 10px;
+    position: absolute;
+    padding-left: 20px;
+    width: 100%;
+  }
+  .munehamb logo p {
+    padding: 12px;
+    font-size: 18px;
+  }
+  .munehamb .overlay {
+    height: 100%;
+  }
+  .munehamb .overlay .closebtn {
+    position: absolute;
+    top: -18px;
+    right: 39px;
+    font-size: 60px;
+  }
+  .munehamb .overlay-content {
+    top: 10%;
+  }
+  nav img {
+    top: 6px;
+  }
+  nav #btn {
+    display: block;
+    margin-right: 30px;
+  }
+  nav a {
+    text-decoration: none;
+    margin: 0px;
+    font-size: 17px;
+  }
+  nav ul {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background: rgba(0, 0, 0, 0.9490196078);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    padding-left: 0px;
+  }
+  nav li {
+    display: block;
+    margin: 25px 0;
+    line-height: 50px;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+  nav #check:checked ~ lable #cancel {
+    display: block;
+  }
+  h2 {
+    font-size: 31px;
+  }
+  .navigation {
+    display: none;
+  }
+  .banner {
+    padding-top: 138px;
+    padding-bottom: 46px;
+    overflow: hidden;
+  }
+  .banner img {
+    height: 25vh;
+  }
+  .banner h1 {
+    font-size: 40px;
+  }
+  .banner .icon {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 17px;
+  }
+  .banner .line, .banner .line2 {
+    width: 60px;
+  }
+  #portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+  }
+  #portfolio .allpics {
+    display: none;
+  }
+  #portfolio .two {
+    width: 161px;
+    height: 28vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin: 4px 4px 4px 8px;
+  }
+  #portfolio .one {
+    width: 161px;
+    height: 28vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin: 4px;
+  }
+  #portfolio .three {
+    width: 161px;
+    height: 28vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin: 4px 4px 4px 11px;
+  }
+  #portfolio .four {
+    width: 161px;
+    height: 28vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 4px;
+  }
+  #portfolio .five {
+    width: 161px;
+    height: 28vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 8px;
+  }
+  #portfolio .six {
+    width: 161px;
+    height: 28vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 12px;
+  }
+  #portfolio .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #portfolio .col-md-4 {
+    width: 164px;
+    margin: 0px;
+    padding: 0px;
+  }
+  #portfolio .g-4 {
+    margin: 5px;
+  }
+  #portfolio .contpics {
+    padding-top: 0px;
+  }
+  #portfolio .images .icon {
+    font-size: 30px;
+  }
+  #portfolio .images .line, #portfolio .images .line2 {
+    width: 60px;
+  }
+  #about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  #about p {
+    font-size: 17px;
+    margin: 4px;
+  }
+  #about .star .icon {
+    font-size: 30px;
+  }
+  #about .star .line, #about .star .line2 {
+    width: 60px;
+  }
+  #about .row {
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white;
+  }
+  #about .col6 {
+    padding: 2px;
+  }
+  #about a {
+    font-size: 16px;
+    width: 163px;
+    padding: 6px;
+  }
+  #about .button {
+    padding-top: 20px;
+  }
+  #contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 38px;
+    margin-right: 38px;
+    overflow: hidden;
+  }
+  #contact .container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #contact .form-control {
+    width: 690px;
+    margin-right: 0px;
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 12px;
+  }
+  #contact .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #contact .con {
+    margin-right: 0px;
+  }
+  #contact .message {
+    width: 690px;
+    padding: 20px;
+    font-size: 19px;
+    margin-top: 12px;
+  }
+  #contact .container {
+    padding: 0px;
+  }
+  #contact .send {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 3px;
+    font-size: 16px;
+    width: 73px;
+    padding: 10px;
+  }
+  #contact .images .icon {
+    font-size: 30px;
+  }
+  #contact .images .line, #contact .images .line2 {
+    width: 60px;
+  }
+  #footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #footer h4 {
+    font-size: 21px;
+  }
+  #footer p {
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+  #footer .colunm {
+    margin-bottom: 12px;
+  }
+  #footer i {
+    padding: 10px;
+  }
+  #footer .icons {
+    padding-bottom: 20px;
+  }
+  #footer .icons .circleMin {
+    margin-left: 10px;
+    border: 1px solid #ffffff;
+    align-content: center;
+    height: 47px;
+    width: 50px;
+    border-radius: 100%;
+    gap: 40px;
+    text-align: center;
+  }
+  .copy {
+    font-size: 17px;
+  }
+  .copy p {
+    padding: 10px;
+  }
 }/*# sourceMappingURL=index.css.map */
