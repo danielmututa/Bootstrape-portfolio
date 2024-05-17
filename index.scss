@@ -1690,9 +1690,7 @@ margin-left: 12px;
    
 
   
-
-
-   @media (min-width:1025px) and (max-width:1400px){
+   @media only screen and (min-width:1399.98px){
     .navigation{
         a{
             font-size: 16px;
@@ -1734,7 +1732,7 @@ margin-left: 12px;
                    margin-bottom: 100px;
 
                    img{
-                    height: 36vh;
+                    height: 37vh;
                    }
     
                }
@@ -1818,7 +1816,7 @@ margin-left: 12px;
        
        
        
-       @media only screen and (min-width:1401px){
+       @media only screen and (min-width:1500px){
         .navigation{
             a{
                 font-size: 16px;
@@ -1860,7 +1858,9 @@ margin-left: 12px;
                        margin-bottom: 100px;
     
                        img{
-                        height: 38vh;
+                        width: 412px;
+                        height: 39vh;
+                        
                        }
         
                    }

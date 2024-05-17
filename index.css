@@ -1282,7 +1282,7 @@
     padding: 10px;
   }
 }
-@media (min-width: 1025px) and (max-width: 1400px) {
+@media only screen and (min-width: 1399.98px) {
   .navigation a {
     font-size: 16px;
   }
@@ -1314,7 +1314,7 @@
     margin-bottom: 100px;
   }
   #portfolio img {
-    height: 36vh;
+    height: 37vh;
   }
   #about {
     padding-top: 100px;
@@ -1376,7 +1376,7 @@
     padding: 12px;
   }
 }
-@media only screen and (min-width: 1401px) {
+@media only screen and (min-width: 1500px) {
   .navigation a {
     font-size: 16px;
   }
@@ -1408,7 +1408,8 @@
     margin-bottom: 100px;
   }
   #portfolio img {
-    height: 38vh;
+    width: 412px;
+    height: 39vh;
   }
   #about {
     padding-top: 100px;
