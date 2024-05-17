@@ -20,11 +20,11 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
 
-          <a href="#">HOME</a>
-          <a href="#portfolio">PORTFOLIO</a>
-          <a href="#about">ABOUT</a>
-          <a href="#contact">CONTACT</a>
-          <a href="#footer">MORE</a>
+          <a href="#" onclick="closeNav()">HOME</a>
+          <a href="#portfolio" onclick="closeNav()" >PORTFOLIO</a>
+          <a href="#about" onclick="closeNav()">ABOUT</a>
+          <a href="#contact" onclick="closeNav()">CONTACT</a>
+          <a href="#footer" onclick="closeNav()">MORE</a>
 
           <i class="fa fa-twitter" style="font-size:25px;color:white;"></i>
           <i class="fa fa-facebook"  style="font-size:25px;color:white;"></i>
@@ -45,8 +45,9 @@
       }
       
       function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
+        document.getElementById("myNav").style.width = "0%";  
       }
+    
       </script>
 
          </div>  
